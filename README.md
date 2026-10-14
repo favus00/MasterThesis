@@ -52,9 +52,19 @@ Tables (`.csv` and `.tex`) are written to `output/tables` and figures to `output
 
 Section 12 of the script compares 23 reference values with those in the thesis. On the original data, **21 match to the fourth decimal** (VECM, Granger, bounds test, NARDL, multipliers, half-lives). The two remaining differences come from a labelling error in the thesis, described under *Errata*. The comparison is saved in `output/tables/table_check_vs_thesis.csv`.
 
-## Data
+## Data availability and reproducibility
 
-The input file is not included: the Brent futures, Brent spot and exchange-rate series come from LSEG and cannot be redistributed. The script expects a weekly Excel file with these columns:
+The analysis is fully scripted: `thesis_pipeline.R` goes from the raw input
+file to every table and figure. The input file (`Dati_completo.xlsx`) is not
+included, because the Brent futures, Brent spot and exchange-rate series come
+from LSEG and cannot be redistributed. The retail fuel prices come from the
+EC Weekly Oil Bulletin, which is public.
+
+To reproduce the results you need a file with the structure described below
+(for example, built from an LSEG subscription). On the original data, the
+script reproduces the thesis results; the comparison is saved in
+`output/tables/table_check_vs_thesis.csv` (21 of 23 reference values match, the
+other two are explained under Errata).
 
 | Column | Content | Source |
 |---|---|---|
