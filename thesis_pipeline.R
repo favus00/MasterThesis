@@ -40,7 +40,7 @@ invisible(lapply(packages, library, character.only = TRUE))
 
 
 setwd("C:/Users/ricky/Desktop/GitHub thesis")
-list.files()   # devi vedere sia thesis_pipeline.R sia Dati_completo.xlsx
+list.files()  
 
 # --- Configuration -----------------------------------------------------------
 
